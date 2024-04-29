@@ -507,6 +507,14 @@ a.dropdown-item:hover::before {
   margin-bottom: 8px;
   color: #5a5a5a;
 }
+.websitedetail-post-tittle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.websitedetail-post-tittle:hover {
+  color: #dc4f72;
+}
 
 .websitedetail-post a .Previous-tittle {
   /* text-decoration: none; */

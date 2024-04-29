@@ -508,7 +508,6 @@ a.dropdown-item:hover::before {
   line-height: 26px;
   /* margin-bottom: 8px; */
   color: #2c3038;
-  transition: all 0.5s;
 }
 .websitedetail-post a .Previous-tittle:hover {
   color: #dc4f72;
@@ -518,6 +517,10 @@ a.dropdown-item:hover::before {
   font-size: 36px;
   line-height: 1.5;
   font-weight: 500;
+}
+
+.websitedetail-post-tittle:hover {
+  color: #dc4f72 !important;
 }
 
 .comment-tittle {
