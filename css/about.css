@@ -102,6 +102,11 @@ header .container .bg-body-tertiary {
   background-color: white !important;
 }
 
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #dc4f72;
+}
+
 .navbar-brand {
   color: #dc4f72;
   font-size: 26px;
@@ -244,7 +249,7 @@ a.dropdown-item:hover::before {
 .btn {
   padding: 15px 30px;
   background-color: #dc4f72 !important;
-  border-radius: 0.375rem 0.375rem 0.375rem 0.375rem;
+  border-radius: 0 0.375rem 0.375rem 0;
   border: 1px solid transparent;
   color: white !important;
   font-size: 16px;
@@ -292,6 +297,7 @@ a.dropdown-item:hover::before {
   border: 1px solid #dc4f72;
   color: white;
 }
+
 html {
   background: #f7f9fc;
   /* font-family: ; */
