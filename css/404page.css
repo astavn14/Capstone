@@ -573,118 +573,105 @@ header .mobile-icon {
 footer {
   background-color: #f7f9fc;
 }
+.footer .footer-title h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: #2c3038;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer .footer-title ul {
+  padding: 0;
+}
+.footer .footer-title ul li {
+  list-style: none;
+  display: block;
+  margin: 10px 0;
 
-.subcribe {
-  margin-bottom: 20px;
+  /* text-decoration: none; */
+}
+.footer .footer-title ul li a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0;
+  color: #656f7b;
+  transition: all 0.5s;
+}
+.footer .footer-title ul li a:hover {
+  color: #dc4f72;
 }
 
-.box-email {
+.footer .footer-form {
   background-color: white;
-  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-  padding: 2em;
+  padding: 36px;
   border-radius: 6px;
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
 }
-
-.box-email h5 {
+.footer .footer-form h4 {
   font-size: 18px;
   line-height: 25px;
   color: #2c3038;
   font-weight: 500;
   margin-bottom: 30px;
 }
-
-.box-email input {
-  width: 78%;
-  padding: 12px 20px;
-  border: 1px solid white;
-  background-color: #f7f9fc;
-  font-weight: 600;
-  border-radius: 6px;
-  margin-right: 5px;
-}
-
-.box-email button {
-  text-align: center;
-  color: white;
-  background-color: #dc4f72;
-  padding: 12px 20px;
-  border: 1px solid #dc4f72;
-  width: 20%;
-  border-radius: 6px;
-}
-
-.box-right p {
+.footer .footer-form input {
+  background: #f7f9fc;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  width: 75%;
   color: #5a5a5a;
-  margin-bottom: unset;
+  font-weight: 500;
+  border-radius: 6px;
+  /* height: 54px; */
+  padding: 15px 20px;
 }
 
-footer h4 {
-  font-size: 20px;
-  line-height: 25px;
-  color: #2c3038;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.row ul {
-  text-decoration: none;
-  list-style: none;
-  padding-left: unset;
-  line-height: 35px;
-}
-
-.row ul li a {
-  text-decoration: none;
+.footer .footer-form p {
+  line-height: 22px;
+  font-size: 16px;
   color: #5a5a5a;
+  margin-top: 10px;
+}
+.footer-form .form_button {
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 500;
   font-size: 14px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #dc4f72;
+  border: 1px solid #dc4f72;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: none;
+  margin-left: 8px;
+  border-radius: 6px;
+  width: 20%;
 }
-
-/* end section  */
-
-.below-box {
+.footer-bot {
   border-top: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-.text-left {
-  justify-content: left;
-  color: #5a5a5a;
-}
-
-.text-left a {
-  text-decoration: none;
-  color: #2c3038;
-  transition: all 0.5s;
-}
-
-.text-left a:hover {
-  color: #dc4f72;
-}
-
-.text-right {
-  display: flex;
-}
-
-.text-right ul {
+.footer-bot-icon ul li {
   list-style: none;
-  padding-left: unset;
-}
-
-.text-right ul a {
-  text-decoration: none;
-  color: #2c3038;
-  padding: 10px;
   margin-right: 5px;
-  transition: all 0.5s;
-}
-
-.text-right ul li {
   display: inline-block;
 }
+.footer-bot-icon ul li a {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  color: #2c3038;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s;
+}
 
-.text-right a:hover {
+.footer-bot-icon ul li a:hover {
   color: #dc4f72;
 }
 
@@ -714,6 +701,67 @@ footer h4 {
   visibility: visible;
   opacity: 1;
 }
+/* float board  */
+
+.float-button {
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 165px;
+  width: 90px;
+  z-index: 110000;
+  text-align: center;
+}
+
+.float-button .right {
+  background-color: #0d1326;
+  border: 1px solid transparent;
+}
+
+.float-button i {
+  color: #e6ebff;
+  opacity: 0.6;
+}
+
+.float-board {
+  background-color: #0d1326;
+  width: 90px;
+  position: fixed;
+  z-index: 100000;
+  right: 0;
+  top: 0;
+  margin-top: 140px;
+  text-align: center;
+  border-radius: 9px 0 0 9px;
+}
+
+.float-board hr {
+  color: #5a5a5a;
+  margin: 50px 0 30px 0;
+}
+
+.float-board a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #e6ebff;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+.float-board a  p{
+  color: #e6ebff;
+}
+
+.float-board a:hover {
+  opacity: 1;
+}
+
+.float-in {
+  margin: 25px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .container {
