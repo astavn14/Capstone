@@ -98,6 +98,11 @@ header .container .bg-body-tertiary {
   background-color: white !important;
 }
 
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #dc4f72;
+}
+
 .navbar-brand {
   color: #dc4f72;
   font-size: 26px;
@@ -769,6 +774,10 @@ footer h4 {
   right: 0px;
   bottom: 0px;
   opacity: 0;
+  transition: all 0.5s;
+}
+.back_to_top:hover {
+  background-color: #cf2952;
 }
 
 /* float board  */

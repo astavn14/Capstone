@@ -102,6 +102,11 @@ header .container .bg-body-tertiary {
   background-color: white !important;
 }
 
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #dc4f72;
+}
+
 .navbar-brand {
   color: #dc4f72;
   font-size: 26px;
@@ -322,26 +327,6 @@ h2 {
   color: #2c3038;
 } */
 
-.sub {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #dc4f72;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-.button {
-  display: inline-block;
-  line-height: 52px;
-  font-weight: 700;
-  font-size: 15px;
-  padding: 0 30px;
-  text-transform: uppercase;
-}
-.btn {
-  color: #dc4f72;
-  border-color: #dc4f72;
-}
 html .btn:first-child:active {
   background-color: #dc4f72;
   border-color: #dc4f72;
@@ -767,85 +752,6 @@ footer h4 {
 
 .text-right a:hover {
   color: #dc4f72;
-}
-
-/* float board  */
-
-.float-button {
-  float: right;
-  position: fixed;
-  right: 0;
-  top: 165px;
-  width: 90px;
-  z-index: 110000;
-  text-align: center;
-  line-height: 50px;
-  box-shadow: -4px 4px 24px -10px #f55f8d;
-  right: 15px;
-  bottom: 15px;
-  opacity: 0;
-}
-
-.footer .footer-title ul li a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 25px;
-  padding: 0;
-  color: #656f7b;
-  transition: all 0.5s;
-}
-.footer .footer-title ul li a:hover {
-  color: #dc4f72;
-}
-
-.footer .footer-form {
-  background-color: white;
-  padding: 36px;
-  border-radius: 6px;
-  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-}
-.footer .footer-form h4 {
-  font-size: 18px;
-  line-height: 25px;
-  color: #2c3038;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-.footer .footer-form input {
-  background: #f7f9fc;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  width: 75%;
-  color: #5a5a5a;
-  font-weight: 500;
-  border-radius: 6px;
-  /* height: 54px; */
-  padding: 15px 20px;
-}
-
-.float-board hr {
-  color: #5a5a5a;
-  margin: 50px 0 30px 0;
-}
-
-.float-board a {
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: #e6ebff;
-  opacity: 0.6;
-  transition: all 0.5s;
-}
-
-.float-board a:hover {
-  opacity: 1;
-}
-
-.float-in {
-  margin: 25px 0 0 0;
-  display: flex;
-  flex-direction: column;
 }
 
 /* back totop */

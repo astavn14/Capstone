@@ -15,8 +15,7 @@
   text-decoration: none;
   color: white;
   background-color: #dc4f72;
-  fo
-  nt-size: 14px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 52px;
   padding: 0 30px;
@@ -98,6 +97,11 @@ header {
 
 header .container .bg-body-tertiary {
   background-color: white !important;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #dc4f72;
 }
 
 .navbar-brand {
@@ -894,9 +898,14 @@ footer h4 {
   text-align: center;
   line-height: 50px;
   box-shadow: -4px 4px 24px -10px #f55f8d;
-  right: 15px;
-  bottom: 15px;
+  right: 0px;
+  bottom: 0px;
   opacity: 0;
+  transition: all 0.5s;
+}
+
+.back_to_top:hover {
+  background-color: #cf2952;
 }
 
 /* float board  */
