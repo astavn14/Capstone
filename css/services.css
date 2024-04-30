@@ -918,6 +918,15 @@ footer h4 {
     left: unset;
     top: -8px;
   }
+  .feaser-left {
+    margin-top: 40px;
+  }
+
+  .product-mid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 420px;
+  }
 }
 
 @media screen and (max-width: 768px) {

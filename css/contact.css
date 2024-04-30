@@ -464,7 +464,7 @@ a.dropdown-item:hover::before {
   text-align: center;
   transition: all 0.5s;
   box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-  width: 30%;
+  /* width: 30%; */
 }
 .contract-item:hover {
   transform: translateY(-8px);
@@ -798,6 +798,13 @@ footer h4 {
   .navbar-expand-lg .navbar-nav .dropdown-menu:before {
     left: unset;
     top: -8px;
+  }
+  .form_right {
+    left: 0;
+    top: -10px;
+  }
+  .contract-box {
+    margin-top: 30px;
   }
 }
 
