@@ -651,7 +651,9 @@ footer {
 }
 
 .subcribe {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .box-email {
@@ -780,6 +782,7 @@ footer h4 {
   bottom: 0px;
   opacity: 0;
   transition: all 0.5s;
+  z-index: 9999;
 }
 .back_to_top:hover {
   background-color: #cf2952;
@@ -922,6 +925,12 @@ footer h4 {
     max-width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .box-email button {
+    width: 30%;
   }
 }
 

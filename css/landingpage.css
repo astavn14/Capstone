@@ -668,10 +668,6 @@ a.dropdown-item:hover::before {
   padding: 80px 0;
 }
 
-.accordion {
-  margin-left: 2.5rem;
-}
-
 .faq-title {
   max-width: 750px;
   margin: auto;
@@ -895,7 +891,7 @@ a.dropdown-item:hover::before {
 }
 
 .row-left {
-  padding: 0 15px 0 25px;
+  padding: 0 25px 0 15px;
 }
 
 .tab-pane h3 {
@@ -1114,7 +1110,9 @@ footer {
 }
 
 .subcribe {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .box-email {
@@ -1379,6 +1377,11 @@ footer h4 {
     left: unset;
     top: -8px;
   }
+  .product-mid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 420px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1386,6 +1389,12 @@ footer h4 {
     max-width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .box-email button {
+    width: 30%;
   }
 }
 
