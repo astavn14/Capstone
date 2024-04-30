@@ -5,12 +5,12 @@ right.onclick = function () {
   console.log("hide");
   right.style.display = "none";
   left.style.display = "unset";
-  left.style.opacity = "0.5";
-  document.querySelector(".float-board").className += " hide";
+  document.querySelector(".float-board").style.right = "-140px";
 };
 
 left.onclick = function () {
+  console.log("unhide");
   right.style.display = "unset";
   left.style.display = "none";
-  document.querySelector(".float-board").className -= " hide";
+  document.querySelector(".float-board").style.right = "0";
 };

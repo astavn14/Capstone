@@ -165,12 +165,16 @@ header .container .bg-body-tertiary {
   border-bottom: none;
 }
 
+.navbar-dropdown-menu-link-21 {
+  position: relative;
+}
+
 .dropdown-menu {
   padding: 1rem 0.3rem;
   min-width: 11rem;
   border: 1px solid #eee;
   box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-  position: relative;
+  position: absolute;
   transform: translateX(-50px);
 }
 
@@ -931,6 +935,7 @@ footer h4 {
   display: unset;
   width: 50px;
   height: 50px;
+  opacity: 0.5;
 }
 
 .float-button .left {
@@ -940,6 +945,7 @@ footer h4 {
   display: none;
   width: 50px;
   height: 50px;
+  opacity: 0.5;
 }
 
 .float-button i {
@@ -1010,5 +1016,53 @@ footer h4 {
   50% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .footer-bot-titile {
+    text-align: center;
+  }
+  .footer-bot-icon .d-flex {
+    justify-content: center !important;
+  }
+  .navbar-nav .dropdown-menu {
+    transform: translateX(0);
+    text-align: center;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    left: unset;
+    top: -8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.15),
+      0 0 0 10px rgba(255, 255, 255, 0.15), 0 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15),
+      0 0 0 20px rgba(255, 255, 255, 0.15), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }

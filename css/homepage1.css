@@ -786,7 +786,7 @@ footer h4 {
   float: right;
   position: fixed;
   right: 0;
-  top: 165px;
+  top: 155px;
   width: 90px;
   z-index: 110000;
   text-align: center;
@@ -794,7 +794,22 @@ footer h4 {
 
 .float-button .right {
   background-color: #0d1326;
+  border-radius: 50%;
   border: 1px solid transparent;
+  display: unset;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.float-button .left {
+  background-color: #0d1326;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
 }
 
 .float-button i {
@@ -812,6 +827,20 @@ footer h4 {
   margin-top: 140px;
   text-align: center;
   border-radius: 9px 0 0 9px;
+  transition: all 0.5s;
+}
+
+.hide {
+  background-color: #0d1326;
+  width: 90px;
+  position: fixed;
+  z-index: 100000;
+  right: -140px;
+  top: 0;
+  margin-top: 140px;
+  text-align: center;
+  border-radius: 9px 0 0 9px;
+  transition: all 0.5s;
 }
 
 .float-board hr {
@@ -826,9 +855,6 @@ footer h4 {
   opacity: 0.6;
   transition: all 0.5s;
 }
-.float-board a p {
-  color: #e6ebff;
-}
 
 .float-board a:hover {
   opacity: 1;
@@ -838,6 +864,23 @@ footer h4 {
   margin: 25px 0 0 0;
   display: flex;
   flex-direction: column;
+}
+
+.cd-top--is-visible {
+  /* // back-to-top button visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -859,6 +902,14 @@ footer h4 {
   .footer-bot-icon .d-flex {
     justify-content: center !important;
   }
+  .navbar-nav .dropdown-menu {
+    transform: translateX(0);
+    text-align: center;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    left: unset;
+    top: -8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -866,20 +917,6 @@ footer h4 {
     max-width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .container {
-    max-width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  .carousel-control-prev {
-    top: -200px;
-  }
-  .carousel-control-next {
-    top: -200px;
   }
 }
 
