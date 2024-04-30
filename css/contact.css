@@ -806,6 +806,15 @@ footer h4 {
   .contract-box {
     margin-top: 30px;
   }
+
+  .below-box {
+    display: block !important;
+    text-align: center;
+  }
+
+  .below-box .text-right {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
